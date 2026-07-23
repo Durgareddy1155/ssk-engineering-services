@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSK Engineering Services</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+/* Header */
+
+header{
+background:#fff;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo img{
+height:70px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+}
+
+nav a:hover{
+color:#d32f2f;
+}
+
+.login-btn{
+background:#d32f2f;
+color:white;
+padding:12px 22px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+text-align:center;
+padding:130px 20px;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#ff5252;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.search-box{
+max-width:800px;
+margin:auto;
+display:flex;
+background:white;
+border-radius:10px;
+overflow:hidden;
+}
+
+.search-box input{
+flex:1;
+padding:18px;
+border:none;
+outline:none;
+font-size:18px;
+}
+
+.search-box button{
+background:#d32f2f;
+color:white;
+border:none;
+padding:18px 35px;
+cursor:pointer;
+}
+
+/* Sections */
+
+.section{
+padding:80px 40px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#222;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#d32f2f;
+margin-bottom:10px;
+}
+
+.about{
+background:white;
+line-height:1.8;
+text-align:center;
+}
+
+.stats{
+text-align:center;
+}
+
+.stats h3{
+font-size:40px;
+color:#d32f2f;
+}
+
+/* Contact Form */
+
+.quote-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.quote-form input,
+.quote-form textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+.quote-form button{
+background:#d32f2f;
+color:white;
+border:none;
+padding:15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+/* Footer */
+
+footer{
+background:#1e1e1e;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* WhatsApp Button */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+color:white;
+font-size:32px;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+.whatsapp:hover{
+transform:scale(1.08);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.search-box{
+flex-direction:column;
+}
+
+.search-box button{
+width:100%;
+}
+
+.section{
+padding:50px 20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+" alt="SSK Engineering Services Logo">
+</div>
+
+<nav>
+<ul>
+<li>#home</li>
+<li>#services</li>
+<li><arojects</li>
+<li>contact">Contact</a></li>
+</ul>
+</nav>
+
+<button class="login-btn">Login / Register</button>
+
+</header>
+
+<section class="hero" id="home">
+
+<h1>Welcome To <span>SSK Engineering Services</span></h1>
+
+<p>
+Professional Welding, Electrical, Painting & Interior Solutions
+</p>
+
+<div class="search-box">
+<input type="text" placeholder="Search Welding, Electrical, Painting, Interior Services">
+<button>Search</button>
+</div>
+
+</section>
+
+<section class="section" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Welding Services</h3>
+<p>Industrial fabrication, structural welding and maintenance works.</p>
+</div>
+
+<div class="card">
+<h3>Electrical Services</h3>
+<p>Commercial and industrial electrical installation solutions.</p>
+</div>
+
+<div class="card">
+<h3>Painting Services</h3>
+<p>Industrial, commercial and residential painting projects.</p>
+</div>
+
+<div class="card">
+<h3>Interior Services</h3>
+<p>Office, showroom and commercial interior fit-out projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="projects">
+
+<h2 class="section-title">Major Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚇 Hyderabad Metro</h3>
+<p>Engineering support and project execution.</p>
+</div>
+
+<div class="card">
+<h3>🏋️ Cult.fit</h3>
+<p>Interior and engineering services for fitness centers.</p>
+</div>
+
+<div class="card">
+<h3>🏬 D-Mart</h3>
+<p>Commercial engineering and maintenance services.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Trusted Clients</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Hyderabad Metro</h3>
+<p>Large-scale infrastructure support projects.</p>
+</div>
+
+<div class="card">
+<h3>Cult.fit</h3>
+<p>Commercial interior and maintenance services.</p>
+</div>
+
+<div class="card">
+<h3>D-Mart</h3>
+<p>Retail engineering and facility solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Client Testimonials</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Hyderabad Metro</h3>
+<p>
+"Excellent workmanship and timely completion of the assigned projects."
+</p>
+</div>
+
+<div class="card">
+<h3>Cult.fit</h3>
+<p>
+"Professional team with quality execution and strong project management."
+</p>
+</div>
+
+<div class="card">
+<h3>D-Mart</h3>
+<p>
+"Reliable contractor with experienced manpower and quality standards."
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>✅ Experienced Team</h3>
+<p>Skilled professionals for engineering and contracting works.</p>
+</div>
+
+<div class="card">
+<h3>✅ Quality Assurance</h3>
+<p>High standards in workmanship, quality and safety.</p>
+</div>
+
+<div class="card">
+<h3>✅ Timely Delivery</h3>
+<p>Projects delivered within committed schedules.</p>
+</div>
+
+<div class="card">
+<h3>✅ Trusted Clients</h3>
+<p>Successfully completed projects for leading organizations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section stats">
+
+<h2 class="section-title">Our Achievements</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>50+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div class="card">
+<h3>20+</h3>
+<p>Happy Clients</p>
+</div>
+
+<div class="card">
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="card">
+<h3>100%</h3>
+<p>Commitment to Quality</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Request A Quote</h2>
+
+<form class="quote-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="5" placeholder="Describe Your Requirement"></textarea>
+
+<button type="submit">Send Enquiry</button>
+
+</form>
+
+</section>
+
+<section class="section about">
+
+<h2 class="section-title">About Us</h2>
+
+<p>
+SSK Engineering Services is a trusted engineering contractor based in
+Kukatpally, Hyderabad. We specialize in Welding, Electrical, Painting and
+Interior works. We have successfully completed projects for Hyderabad Metro,
+Cult.fit, D-Mart and various commercial clients with a strong commitment to
+quality, safety and timely delivery.
+</p>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p><strong>SSK Engineering Services</strong></p>
+<p>📍 Kukatpally, Hyderabad</p>
+<p>📞 9849221227</p>
+<p>📧 durgareddy759@gmail.com</p>
+
+</section>
+
+<footer>
+
+<h3>SSK Engineering Services</h3>
+
+<p>Welding | Electrical | Painting | Interior</p>
+
+<p>Kukatpally, Hyderabad</p>
+
+<p>WhatsApp: 9849221227</p>
+
+<p>Email: durgareddy759@gmail.com</p>
+
+<p>© 2026 SSK Engineering Services. All Rights Reserved.</p>
+
+</footer>
+
+https://wa.me/919849221227?text=Hello%20SSK%20Engineering%20Services,%20I%20am%20interested%20in%20your%20services.
+💬
+</a>
+
+</body>
+</html>
